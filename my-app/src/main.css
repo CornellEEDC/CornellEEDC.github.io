@@ -2,11 +2,10 @@
 
 /* main canvas space per page. default spacing to make room for navigation bar */
 .Main {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 70px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
-
 
 body
 {
@@ -73,14 +72,14 @@ img.child {
 
 /* Members Page Specifics */
 
-#members h1 {
+.Members-h1 {
   color: #000000;
   font-weight: bold;
   text-align: center;
   
   }
 
-#members h2 {
+.Members-h2 {
   background-color: rgb(255, 0, 0);
   text-align: center;
 }
