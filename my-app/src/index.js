@@ -1,10 +1,15 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import App from './App';
 import Navigation from './components/navbar';
 import reportWebVitals from './reportWebVitals';
+
+import './main.css';
+
+
+// Pages
 import Home from './pages/Home'
+import Members from './pages/members';
 
 import {
   BrowserRouter as Router,
@@ -19,7 +24,7 @@ root.render(
     <Navigation />
       <Routes>
         <Route exact path = "/" element={<Home />} />
-        <Route exact path = "/members" element={<App />} />
+        <Route exact path = "/members" element={<Members />} />
       </Routes>
     </Router>
 

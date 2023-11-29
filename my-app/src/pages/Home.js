@@ -2,7 +2,7 @@
 
 function Home() {
   return (
-    <div className="Home" style={{marginTop:'70px', marginLeft:'20px'}} >
+    <div className="Main" >
         <h2> Cornell Entertainment Engineering & Design Club</h2>
         <h4> Welcome to CEEDC!</h4>
         <p> <b>Cornell Entertainment Engineering & Design Club</b> 
