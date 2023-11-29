@@ -1,9 +1,8 @@
-import '../styles/main.css';
-
+// import '../styles/main.css';
 
 function Home() {
   return (
-    <div style={{marginTop:'60px', marginLeft:'20px'}} >
+    <div className="Home" style={{marginTop:'70px', marginLeft:'20px'}} >
         <h2> Cornell Entertainment Engineering & Design Club</h2>
         <h4> Welcome to CEEDC!</h4>
         <p> <b>Cornell Entertainment Engineering & Design Club</b> 

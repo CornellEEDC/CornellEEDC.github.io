@@ -5,32 +5,32 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-// import '../styles/main.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import { Link } from "react-router-dom"; 
+import { LinkContainer } from 'react-router-bootstrap'
 
 
-// function Nav() {
-//   return (
-//     <div>
-//     <nav id = "nav"> 
-//         <ul>
-//             <li><a class = "active" href='index.html'>Home</a></li>
-//             <li><a href='members.js'>Meet our peeps</a></li>
-//             <li><a href='projects.html'>Projects</a></li>
-//         </ul>
-//     </nav>
-//     </div>
-//   )
-// }
-
-function ColorSchemesExample() {
+function Navigation() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar  fixed="top" bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+
+            <LinkContainer to="/">
+            <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+
+            <LinkContainer to="/members">
+            <Nav.Link>Meet the Peeps</Nav.Link>
+            </LinkContainer>
+
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -50,7 +50,7 @@ function ColorSchemesExample() {
   );
 }
 
-export default ColorSchemesExample
+export default Navigation
 // export default Nav
 
 
