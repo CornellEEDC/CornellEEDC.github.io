@@ -43,19 +43,20 @@ p.child {
   
 }
 
-/*basic state of images*/
+/*basic style of images that are hoverable*/
 img.child {
   opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 10);
 }
 
-/* reponse when hovering over leadership images*/
+/* reponse when hovering over leadership: images*/
 .parent:hover img.child{
   background-color: rgb(0, 0, 0);
   opacity: 0.30;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 10);
 }
 
-/* reponse when hovering over leadership description*/
+/* reponse when hovering over leadership: description*/
 .parent:hover p.child {
   visibility: visible;
   opacity: 1;
@@ -78,6 +79,7 @@ h2 {
 
 
 
+
 /* Nav */
 
 #nav ul {
@@ -93,7 +95,10 @@ h2 {
   top: 0; 
   left: 0; 
   margin: 0;
-  padding: 0;        
+  padding: 0;     
+  
+  /* bar stays at the top of the page when we scroll */
+  position: absolute;
 }
 
 #nav li {
